@@ -1,2 +1,2 @@
 # bg3dle
-Our BG3dle game.
+Our Wordle-type game, but Baldur's Gate 3 characters.
