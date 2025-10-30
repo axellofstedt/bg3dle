@@ -1,7 +1,12 @@
-import assets.database
 import random
+import sys
+from pathlib import Path
+# Add the project root (parent of pythonversion) to sys.path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 
-characters = assets.database.read()
+from assets import database
+
+characters = database.read()
 feedbackHistory = []
 
 def chooseRandom():
