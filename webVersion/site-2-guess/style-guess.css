@@ -1,0 +1,588 @@
+:root {
+    /* ===== PRIMARY COLORS ===== */
+    --primary-blue: #4cc9f0;
+    --primary-blue-transparent: rgba(76, 201, 240, 0.3);
+    --primary-blue-semi: rgba(76, 201, 240, 0.5);
+    --primary-blue-dark: rgba(76, 201, 240, 0.7);
+    
+    /* ===== TEXT COLORS ===== */
+    --text-primary: rgb(255, 255, 255);
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-muted: rgba(255, 255, 255, 0.6);
+    --text-dark: rgba(0, 0, 0, 0.8);
+    
+    /* ===== STATUS COLORS ===== */
+    --color-correct: rgba(76, 175, 80, 0.3);
+    --color-correct-text: #4CAF50;
+    --color-correct-border: #4CAF50;
+    
+    --color-wrong: rgba(244, 67, 54, 0.3);
+    --color-wrong-text: #f44336;
+    --color-wrong-border: #f44336;
+    
+    --color-partial: rgba(255, 193, 7, 0.3);
+    --color-partial-text: #ffc107;
+    --color-partial-border: #ffc107;
+    
+    /* ===== BACKGROUND COLORS ===== */
+    --blur-effect: blur(55px);
+    --bg-dark: rgba(30, 30, 40, 0.7);
+    --bg-darker: rgba(20, 20, 30, 1);
+    --bg-semi-dark: rgba(255, 255, 255, 0.05);
+    --bg-semi-light: rgba(255, 255, 255, 0.1);
+    --bg-semi-lighter: rgba(255, 255, 255, 0.2);
+    --bg-transparent: rgba(0, 0, 0, 0.3);
+    
+    /* ===== BORDER COLORS ===== */
+    --border-light: rgba(255, 255, 255, 0.3);
+    --border-medium: rgba(255, 255, 255, 0.2);
+    --border-dark: rgba(255, 255, 255, 0.1);
+    --border-primary: rgba(76, 201, 240, 0.5);
+    
+    /* ===== BUTTON COLORS ===== */
+    --button-primary-bg: rgba(76, 201, 240, 0.5);
+    --button-primary-text: var(--text-primary);
+    --button-primary-hover: rgba(76, 201, 240, 0.7);
+    
+    --button-secondary-bg: rgba(255, 255, 255, 0.1);
+    --button-secondary-text: var(--text-primary);
+    --button-secondary-hover: rgba(255, 255, 255, 0.2);
+
+
+    /* ===== INITIAL MESSAGE COLORS ===== */
+    --game-message-initial-bg: var(--bg-semi-dark);
+    --game-message-initial-border: var(--border-dark);
+    --game-message-initial-text: var(--text-muted);
+    --previous-guesses-text: var(--text-primary);
+    --previous-guesses-border: var(--primary-blue-transparent);
+    --previous-guesses-bg: var(--bg-semi-dark);
+
+    /* ===== GAME SPECIFIC COLORS ===== */
+    
+    --guess-topbar-color: var(--text-primary);
+    --guess-topbar-bg: var(--bg-semi-dark);
+    --guess-topbar-border: var(--border-medium);
+    
+    --character-name-color: var(--text-primary);
+    --character-image-border: var(--border-light);
+    
+    --search-result-bg: var(--bg-dark);
+    --search-result-hover: var(--primary-blue-semi);
+    --search-result-border: var(--border-medium);
+    
+    --game-message-success-bg: var(--color-correct);
+    --game-message-success-border: var(--color-correct-border);
+    --game-message-success-text: var(--color-correct-text);
+    
+    --game-message-error-bg: var(--color-wrong);
+    --game-message-error-border: var(--color-wrong-border);
+    --game-message-error-text: var(--color-wrong-text);
+    
+    --game-message-info-bg: var(--color-wrong);
+    --game-message-info-border: var(--color-wrong);
+    --game-message-info-text: white;
+    
+    /* ===== TABLE COLORS ===== */
+    --table-header-bg: var(--bg-dark);
+    --table-header-text: var(--guess-topbar-color);
+    --table-header-border: var(--border-medium);
+    
+    --table-row-bg: transparent;
+    --table-row-border: var(--border-dark);
+    --table-row-alt-bg: rgba(255, 255, 255, 0.03);
+    
+    --table-cell-correct-bg: var(--color-correct);
+    --table-cell-correct-text: var(--color-correct-text);
+    
+    --table-cell-wrong-bg: var(--color-wrong);
+    --table-cell-wrong-text: var(--color-wrong-text);
+    
+    --table-cell-partial-bg: var(--color-partial);
+    --table-cell-partial-text: var(--color-partial-text);
+    
+    /* ===== LAYOUT & SPACING ===== */
+    --border-radius-small: 6px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 15px;
+    
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 10px;
+    --spacing-xl: 10px;
+    
+    --container-max-width: 70vw;
+    --container-padding: var(--spacing-xl);
+    
+    /* ===== SHADOWS ===== */
+    --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 10px var(--primary-blue-transparent);
+    
+    /* ===== FONT SIZES ===== */
+    --font-size-xs: 11px;
+    --font-size-sm: 12px;
+    --font-size-md: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 1.2em;
+    --font-size-xxl: 1.5em;
+    
+    /* ===== TRANSITIONS ===== */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-primary);
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        var(--bg-transparent),
+        var(--bg-transparent)
+    ), url('images/Baldurs-Gate-3-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--spacing-lg);
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xl) 0;
+    margin-bottom: var(--spacing-xl);
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+.game-container {
+    width: 90%;
+    max-width: var(--container-max-width);
+    background: var(--bg-semi-light);
+    backdrop-filter: var(--blur-effect);
+    border-radius: var(--border-radius-large);
+    padding: var(--container-padding);
+    border: 1px solid var(--border-light);
+}
+
+.search-section {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+#characterSearch {
+    flex: 1;
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-lg);
+    border: 2px solid var(--border-light);
+    border-radius: var(--border-radius-medium);
+    background: var(--bg-semi-light);
+    color: var(--text-primary);
+    outline: none;
+    transition: all var(--transition-normal);
+}
+
+#characterSearch:focus {
+    border-color: var(--primary-blue);
+    box-shadow: var(--shadow-glow);
+}
+
+#characterSearch::placeholder {
+    color: var(--text-muted);
+}
+
+button {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-lg);
+    background: var(--button-primary-bg);
+    color: var(--button-primary-text);
+    border: none;
+    border-radius: var(--border-radius-medium);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    font-weight: bold;
+}
+
+button:hover {
+    background: var(--button-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+#newGameButton {
+    background: var(--button-secondary-bg);
+    color: var(--button-secondary-text);
+}
+
+#newGameButton:hover {
+    background: var(--button-secondary-hover);
+}
+
+.search-results {
+    max-height: 300px;
+    overflow-y: auto;
+    background: var(--search-result-bg);
+    border-radius: var(--border-radius-medium);
+    margin-bottom: var(--spacing-lg);
+    display: none;
+    border: 1px solid var(--search-result-border);
+    box-shadow: var(--shadow-medium);
+}
+
+.search-result-item {
+    padding: var(--spacing-sm) var(--spacing-md);
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-dark);
+    transition: background-color var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.search-result-item:hover {
+    background: var(--search-result-hover);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: var(--border-radius-small);
+    border: 2px solid var(--character-image-border);
+}
+
+.search-result-name {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.game-message {
+    text-align: center;
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--border-radius-medium);
+    font-weight: bold;
+    display: none;
+}
+
+.game-message.success {
+    background: var(--game-message-success-bg);
+    border: 1px solid var(--game-message-success-border);
+    color: var(--game-message-success-text);
+}
+
+.game-message.error {
+    background: var(--game-message-error-bg);
+    border: 1px solid var(--game-message-error-border);
+    color: var(--game-message-error-text);
+}
+
+.game-message.info {
+    background: var(--game-message-info-bg);
+    border: 1px solid var(--game-message-info-border);
+    color: var(--game-message-info-text);
+}
+
+/* Guesses container styling */
+.guesses-container {
+    margin-top: var(--spacing-lg);
+}
+
+.guesses-container h3 {
+    text-align: center;
+    color: var(--previous-guesses-text);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-xl);
+    border-bottom: 2px solid var(--previous-guesses-border);
+    padding-bottom: var(--spacing-sm);
+}
+
+.feedback-history {
+    max-height: 50vh;
+    overflow-y: auto;
+    background: var(--previous-guesses-bg);
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--border-dark);
+    position: relative;
+}
+
+/* Table-based feedback styles */
+.feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    background: transparent;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+/* Fixed header with solid background */
+.feedback-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.feedback-table thead tr {
+    background: var(--table-header-bg);
+    border-bottom: 2px solid var(--table-header-border);
+}
+
+.feedback-table th {
+    padding: var(--spacing-md) var(--spacing-sm);
+    text-align: center;
+    font-weight: bold;
+    color: var(--table-header-text);
+    font-size: var(--font-size-md);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+    position: relative;
+}
+
+/* Add subtle separator between headers */
+.feedback-table th:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background: var(--table-header-border);
+}
+
+.feedback-table tbody {
+    background: transparent;
+}
+
+.feedback-table tbody tr {
+    background: var(--table-row-bg);
+}
+
+.feedback-table tbody tr:nth-child(even) {
+    background: var(--table-row-alt-bg);
+}
+
+.feedback-table td {
+    padding: var(--spacing-md) var(--spacing-sm);
+    text-align: center;
+    border-bottom: 1px solid var(--table-row-border);
+    font-size: var(--font-size-md);
+}
+
+.feedback-table tr:last-child td {
+    border-bottom: none;
+}
+
+.cell-correct {
+    background: var(--table-cell-correct-bg);
+    color: var(--table-cell-correct-text);
+    font-weight: 600;
+}
+
+.cell-wrong {
+    background: var(--table-cell-wrong-bg);
+    color: var(--table-cell-wrong-text);
+    font-weight: 600;
+}
+
+.cell-partial {
+    background: var(--table-cell-partial-bg);
+    color: var(--table-cell-partial-text);
+    font-weight: 600;
+}
+
+/* Guess column with image */
+.guess-with-image {
+    text-align: center;
+    padding: var(--spacing-sm);
+    min-width: 100px;
+}
+
+.character-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: var(--border-radius-medium);
+    border: 2px solid var(--character-image-border);
+    margin-bottom: var(--spacing-xs);
+}
+
+.character-name {
+    font-weight: bold;
+    color: var(--character-name-color);
+    font-size: var(--font-size-md);
+}
+
+.game-info {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Scrollbar styling */
+.search-results::-webkit-scrollbar,
+.feedback-history::-webkit-scrollbar {
+    width: 8px;
+}
+
+.search-results::-webkit-scrollbar-track,
+.feedback-history::-webkit-scrollbar-track {
+    background: var(--bg-semi-dark);
+    border-radius: var(--border-radius-small);
+}
+
+.search-results::-webkit-scrollbar-thumb,
+.feedback-history::-webkit-scrollbar-thumb {
+    background: var(--bg-semi-lighter);
+    border-radius: var(--border-radius-small);
+}
+
+.search-results::-webkit-scrollbar-thumb:hover,
+.feedback-history::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-blue);
+}
+
+/* Empty state styling */
+.empty-guesses {
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    color: var(--text-muted);
+    font-style: italic;
+    background: var(--bg-semi-dark);
+    border-radius: var(--border-radius-medium);
+}
+
+.game-message.initial {
+    background: var(--game-message-initial-bg);
+    border: 1px solid var(--game-message-initial-border);
+    color: var(--text-primary);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .game-container {
+        width: 95%;
+        padding: var(--spacing-lg);
+    }
+    
+    .search-section {
+        flex-direction: column;
+    }
+    
+    .logo {
+        max-width: 200px;
+    }
+    
+    .search-result-item {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .search-result-image {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .feedback-history {
+        max-height: 300px;
+    }
+    
+    .feedback-table {
+        font-size: 0.8em;
+    }
+    
+    .feedback-table th,
+    .feedback-table td {
+        padding: var(--spacing-sm) var(--spacing-xs);
+    }
+    
+    .feedback-table th {
+        font-size: var(--font-size-sm);
+        letter-spacing: 0.3px;
+    }
+    
+    .character-image {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --container-padding: var(--spacing-md);
+        --spacing-lg: var(--spacing-md);
+    }
+    
+    .feedback-table {
+        font-size: 0.7em;
+    }
+    
+    .feedback-table th,
+    .feedback-table td {
+        padding: var(--spacing-sm) var(--spacing-xs);
+    }
+    
+    .feedback-table th {
+        font-size: var(--font-size-xs);
+    }
+    
+    .character-image {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .guesses-container h3 {
+        font-size: 1.1em;
+    }
+}

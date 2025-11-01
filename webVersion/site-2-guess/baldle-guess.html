@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG3dle - Baldur's Gate 3 Character Guessing Game</title>
+    <link rel="stylesheet" href="style-guess.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <div class="content">
+        <div class="logo-container">
+            <img src="../site-2-guess/images/PlaceHolder.png" alt="BG3dle Logo" class="logo">
+        </div>
+
+        <div class="game-container">
+            <div class="search-section">
+                <input type="text" id="characterSearch" placeholder="Loading character data..." title="Type a character name" disabled>
+                <button id="guessButton" onclick="submitGuess()" disabled>Guess</button>
+                <button id="newGameButton" onclick="newGame()" style="display:none;">New Game</button>
+            </div>
+
+            <div id="searchResults" class="search-results"></div>
+
+            <div class="feedback-section">
+                <div id="gameMessage" class="game-message">Loading character data...</div>
+                <div class="guesses-container">
+                    <h3>Previous Guesses</h3>
+                    <div id="feedbackHistory" class="feedback-history"></div>
+                </div>
+            </div>
+            
+            <!-- /
+            <div class="game-info">
+                <p>Guess the randomly selected Baldur's Gate 3 character!</p>
+                <p>Type a character name and click Guess to see feedback.</p>
+            </div>
+            -->
+
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
