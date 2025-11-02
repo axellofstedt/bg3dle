@@ -118,7 +118,8 @@ function initGame() {
         return;
     }
     
-    answer = characterNames[Math.floor(Math.random() * characterNames.length)];
+    answer = getDailyCharacter(characters); // daily character
+    //answer = characterNames[Math.floor(Math.random() * characterNames.length)]; //random character
     console.log('Answer:', answer); // For debugging
     
     attempts = 0;
@@ -677,3 +678,24 @@ window.onload = function() {
     
     loadCharacterData();
 };
+
+function getDailyCharacter(characters) {    
+    const characterNames = Object.keys(characters).sort();
+
+    // Use a more explicit date normalization to ensure consistency across timezones
+    const today = new Date();
+    const dateString = today.toISOString().split('T')[0]; // YYYY-MM-DD format
+    
+    // Improved hash function with seed for better distribution
+    let hash = 0;
+    for (let i = 0; i < dateString.length; i++) {
+        const char = dateString.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash; // Convert to 32-bit integer
+    }
+    
+    // Ensure positive index and handle edge cases
+    const dailyIndex = Math.abs(hash) % characterNames.length;
+    console.log(characterNames[dailyIndex]);
+    return characterNames[dailyIndex];
+}

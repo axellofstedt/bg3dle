@@ -112,6 +112,7 @@
     --spacing-xl: 10px;
     
     --container-max-width: 70vw;
+    --container-max-width-mobile: 100vw;    
     --container-padding: var(--spacing-xl);
     
     /* ===== SHADOWS ===== */
@@ -190,14 +191,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--spacing-xl) 0;
-    margin-bottom: var(--spacing-xl);
 }
 
 .logo {
-    max-width: 300px;
-    height: auto;
+    max-width: 50vw;
+    height: 25vh;
     display: block;
+    filter: invert(1);
 }
 
 .game-container {
@@ -513,6 +513,31 @@ button:hover {
 /* Responsive design */
 @media (max-width: 768px) {
     .game-container {
+        width: 90%;
+        max-width: var(--container-max-width-mobile);
+        background: var(--bg-semi-light);
+        backdrop-filter: var(--blur-effect);
+        border-radius: var(--border-radius-large);
+        border: 1px solid var(--border-light);
+    }
+
+    #background-pic {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+            var(--bg-transparent),
+            var(--bg-transparent)
+        ), url("../site-2-guess/images/mobile-background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        z-index: -1;
+    }
+
+    .game-container {
         width: 95%;
         padding: var(--spacing-lg);
     }
@@ -522,7 +547,7 @@ button:hover {
     }
     
     .logo {
-        max-width: 200px;
+        max-width: 100vw;
     }
     
     .search-result-item {
